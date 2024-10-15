@@ -30,7 +30,7 @@ if st.button('Predict'):
     # Make prediction
     prediction = model.predict(user_data)[0] # [1 or 0]  [0]
     
-    st.write(f"Prediction: {'will' if prediction == 1 else 'Will not'}")
+    st.write(f"Prediction: {'he/she can purchase' if prediction == 1 else 'he/she Will not purchase'}")
     
     # Store user input and prediction in the database
     db = connect_to_db() # mysql.conector.connect.cursor()
