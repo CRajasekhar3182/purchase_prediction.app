@@ -20,7 +20,7 @@ gender=st.selectbox('select_gender(0:Female,1:Male)',[0,1])
 
 age=st.number_input("enter_age",min_value=18)
 
-salary=st.number_input("enter salary",min_value=15)
+salary=st.number_input("enter salary",min_value=15000)
 
 # Prediction button
 if st.button('Predict'):
